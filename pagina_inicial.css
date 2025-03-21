@@ -1,0 +1,26 @@
+body{
+background-color: rgb(233, 223, 223);
+}
+
+.menu {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: darkcyan;
+}
+
+.marca {
+    text-align: center;
+    background-color: darkcyan;
+}
+
+.apresentacao {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.produtos {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
