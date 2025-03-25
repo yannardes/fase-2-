@@ -51,7 +51,6 @@ img {
   margin-bottom: 10px;
 }
 
-/* Rodapé */
 html,
 body {
   height: 100%;
@@ -65,8 +64,7 @@ body {
 }
 
 footer {
-  background-color: #000000;
-  color: #fff;
+  color: #000000;
   text-align: center;
   padding: 15px 0;
   width: 100%;

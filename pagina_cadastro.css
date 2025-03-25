@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  background-color: #d5e0de;
   margin: 0;
   padding: 0;
 }
@@ -75,7 +75,7 @@ body {
 }
 
 footer {
-  color: #fff;
+  color: #000000;
   text-align: center;
   padding: 15px 0;
   width: 100%;

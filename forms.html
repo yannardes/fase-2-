@@ -7,16 +7,21 @@
     <title>Cadastro</title>
 </head>
 <body>
+
+    <!-- container para criacão do forms -->
     <div class="container">
+    <!-- Forms para criaçao do corpo da pagina de cadastro -->
     <form action="#" method="get">
         <h2 class="titulo-registro">Crie sua conta</h2>
+
+        <!-- Cadastro de nome -->
         <div class="nome-completo">
 
           <label for="name">Nome Completo:</label>
           <input type="text" name="nome" id="nome" required />
 
         </div>
-
+        <!-- Cadastro de CPF -->
         <div class="CPF">
 
         <label for="CPF">CPF:</label>
@@ -25,7 +30,7 @@
         </div>
 
 
-
+        <!-- Cadastro de Email -->
         <div class="email">
 
         <label for="email">Email:</label>
@@ -37,7 +42,7 @@
         </div>
 
    
-
+        <!-- Cadastro de Senha -->
         <div class="senha">
             <label for="senha">Escolha uma senha:</label>
             <input type="password" name="senha" id="senha" required>
@@ -47,47 +52,49 @@
 
         </div>
 
-        
+        <!-- Cadastro de data utilizando elemento de calendario -->
     <div class="dnascimento">
 
         <label for="dnacismento">Data de nascimento:</label>
         <input type="date" id="data" name="data" required>
 
-    </div>
-<div class="sexo">
-    <label for="sexo">Sexo:</label>
+        </div>
 
-    <label for="sexo">Masculino</label>
-    <input type="radio" name="title">
+        <!-- Escolha de sexo utilizando botão radius -->
+        <div class="sexo">
+        <label for="sexo">Sexo:</label>
 
-    <label for="sexo">Feminino</label>
-    <input type="radio" name="title">
-</div>
+        <label for="sexo">Masculino</label>
+        <input type="radio" name="title">
 
-<div class="endereco">
-<label for="Estado">Escolha seu estado:</label>
-<select name="Estado" id="Estado" required>
-<option value="RS">RS</option>
-<option value="SC">SC</option>
-<option value="PR">PR</option>
+        <label for="sexo">Feminino</label>
+        <input type="radio" name="title">
+        </div>
+
+        <div class="endereco">
+            <label for="Estado">Escolha seu estado:</label>
+            <select name="Estado" id="Estado" required>
+            <option value="RS">RS</option>
+            <option value="SC">SC</option>
+            <option value="PR">PR</option>
 </select>
 
-<label for="cidade">Cidade:</label>
-<input type="text" id="cidade" name="cidade" required>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
 
-<label for="Bairro">Bairro:</label>
-<input type="text" id="bairro" name="bairro" required>
+            <label for="Bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
 
 
-<label for="Rua">Rua:</label>
-<input type="text" name="rua" id="rua">
+            <label for="Rua">Rua:</label>
+            <input type="text" name="rua" id="rua">
 
-<label for="Numero">Numero:</label required>
-<input type="number" id="Numero" name="numero" required>
+            <label for="Numero">Numero:</label required>
+        <input type="number" id="Numero" name="numero" required>
 
-<label for="complemento">Complemento:</label>
-<input type="number" id="complemento" name="complemento" required>
-</div>
+        <label for="complemento">Complemento:</label>
+        <input type="number" id="complemento" name="complemento" required>
+    </div>
 
 <div class="botao">
     <button>CONFIRMA</button>

@@ -15,7 +15,7 @@ h1 {
 
 div {
   background-color: white;
-  padding: 20px;
+  padding: 30px;
   margin: 20px auto;
   width: 80%;
   max-width: 600px;
@@ -61,8 +61,7 @@ body {
 }
 
 footer {
-  background-color: #000000;
-  color: #fff;
+  color: #000000;
   text-align: center;
   padding: 15px 0;
   width: 100%;
