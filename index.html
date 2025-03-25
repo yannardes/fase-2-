@@ -1,85 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-<head class="cabecalho">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pagina_inicial.css">
-    <title>MiniMercado</title>
-    <header class="marca">Mini Mercado C & C</header>
-    <nav class = "menu">
-            <a href="produtos.html">produtos</a>
-            <a href="servicos.html">Servicos</a>
-            <a href="contato.html">Contatos</a>
-            <a href="conta.html">conta</a>           
-     </nav>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniMercado C & C</title>
+    <link rel="stylesheet" href="pagina_cadastro.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="marca">
+      <h1>Mini Mercado C & C</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="forms.html">Conta</a></li>
+        </ul>
+      </nav>
+    </header>
 
-     
-          
-     
-</head>
-<body>
-<div class="apresentacao">
- <h1 class="intro">Aqui nos preocupamos com você:</h1>
- <p>
- No Mercado C&C, prezamos pela sua comodidade e bem-estar. Aqui, você encontra uma seleção de produtos essenciais,  
- desde alimentos não perecíveis até itens de higiene e limpeza, sempre com qualidade e preços acessíveis. Além disso, 
- para facilitar seu dia a dia, oferecemos entregas rápidas através de tele-entrega, garantindo que tudo o que você precisa chegue 
- até você com praticidade e segurança.</p>
-</div>
+    <div class="container mt-4">
+      <h1 class="intro text-center">Aqui nos preocupamos com você:</h1>
+      <p class="apresentacao text-center">
+        No Mercado C&C, prezamos pela sua comodidade e bem-estar. Aqui, você
+        encontra uma seleção de produtos essenciais, desde alimentos não
+        perecíveis até itens de higiene e limpeza, sempre com qualidade e preços
+        acessíveis. Além disso, para facilitar seu dia a dia, oferecemos
+        entregas rápidas através de tele-entrega, garantindo que tudo o que você
+        precisa chegue até você com praticidade e segurança.
+      </p>
+    </div>
 
-<div class="produtos">
-<article class="pessego">
-    <h2>Pessegos🍑:</h2>
-    <p>Pêssegos orgânicos fresquinhos, da mais alta qualidade e confiança que a marca C&C pode oferecer!</p>
-<img src="frutas/pessego.jpg" alt="pessego" width="300px" height="200px"/>  
-    <p>KG:15,90R$</p>
-</article>
+    <!-- Carrossel -->
+    <div
+      id="carouselProdutos"
+      class="carousel slide mt-5"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="frutas/pessego.jpg" class="d-block w-100" alt="Pêssegos" />
+        </div>
+        <div class="carousel-item">
+          <img src="frutas/morango.jpg" class="d-block w-100" alt="Morangos" />
+        </div>
+        <div class="carousel-item">
+          <img src="alimento/massa.jpg" class="d-block w-100" alt="Massa" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselProdutos"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselProdutos"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
 
-<article class="morango">
-    <h2>Morangos🍓:</h2>
-    <p>Morangos orgânicos fresquinhos, da mais alta qualidade e confiança que a marca C&C pode oferecer!</p>
-    <img src="frutas/morango.jpg" alt="morango" width= 300px height= 200px />
-     <p>KG:28,00R$</p>
-</article>
+    <section class="itens">
+      <div>
+        <h2>Pêssegos🍑:</h2>
+        <img src="frutas/pessego.jpg" alt="pêssegos" />
+        <p>
+          Pêssegos orgânicos fresquinhos, da mais alta qualidade e confiança que
+          a marca C&C pode oferecer!
+        </p>
+        <p>KG: R$15,90</p>
+      </div>
+      <div>
+        <h2>Morangos🍓:</h2>
+        <img src="frutas/morango.jpg" alt="morango" />
+        <p>
+          Morangos orgânicos fresquinhos, da mais alta qualidade e confiança que
+          a marca C&C pode oferecer!
+        </p>
+        <p>KG: R$28,00</p>
+      </div>
+      <div>
+        <h2>Massa🍝:</h2>
+        <img src="alimento/massa.jpg" alt="massa" />
+        <p>
+          Massa 500g tipo farfalle orgânica, da mais alta qualidade e confiança
+          que a marca C&C pode oferecer!
+        </p>
+        <p>UN: R$10,50</p>
+      </div>
+    </section>
 
-<article class="massa">
-<h2>Massa🍝:</h2>
-<p>Massa 500g tipo farfale orgânica, da mais alta qualidade e confiança que a marca C&C pode oferecer!</p>
-<img src="alimento/massa.jpg" alt="massa" width="300px" height="200px"/> 
-    <p>UN:10,50R$</p>
-</article>
+    <footer class="text-center mt-5">
+      <small>
+        Copyright © 2025 Mini Mercado C&C. Todos os direitos reservados.
+      </small>
+      <p>
+        <a href="produtos.html">Produtos</a> |
+        <a href="servicos.html">Serviços</a> |
+        <a href="forms.html">Conta</a></a> |
+        <a href="#">mercadocc@email.com</a>
+      </p>
+    </footer>
 
-<article class="arroz">
-    <h2>Arroz🍚:</h2>
-    <p>Arroz 500g orgânico, da mais alta qualidade e confiança que a marca C&C pode oferecer!</p>
-    <img src="alimento/arroz.jpg" alt="papel" width="300px" height="200px" />
-    <p>KG:18,00R$</p>
-</article>
-
-<article class="papel">
-    <h2>Papel higiênico🧻:</h2>
-    <p>Pacote de Papel Higiênico com 12 rolos da mais alta qualidade, folha TRIPLA para uma grande maciez!</p>
-    <img src="higiene/papelH.jpg" alt="papel-higienico" width="300" height="200px">
-    <p>UN:17,50R$</p>
-</article>
-
-<article class="amaciante">
-    <h2>Amaciante👚:</h2>
-    <p>Amaciante 500ml lavanda e rosas com nova formula! para maxima maciez das roupas e cheiro duradouro </p>
-    <img src="higiene/amaciante.jpeg" alt="amaciante" width="300px" height="200px" >
-    <p>UN:18,65R$</p>
-</article>
-
-</div>
-</body>
-<footer>
-<small> Copyright © 2025 Mini Mercado C&C. Todos direitos reservados.</small>
-<p><small>
-    <a href="produtos.html">produtos</a>
-    <a href="servicos.html">Servicos</a>
-    <a href="contato.html">Contatos</a>
-    <a href="#">mercadocc@hmail.com</a> 
-</small></p>
-</footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

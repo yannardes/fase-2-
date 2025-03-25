@@ -3,29 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina_servicos.css"/>
     <title>Servicos</title>
-    <center><h1>Escolha a forma de entrega</h1></center>
+    <h1>Escolha a forma de entrega</h1>
 </head>
 <body>
-<div>
-    <center>
+    <div>
     <p>Entrega ou Retirada? Você Escolhe! 🚀</p>
     <p>Quer comodidade? Peça pelo aplicativo e receba tudo no conforto de casa! 🚚💨</p>
     <p>Prefere passar aqui rapidinho? Faça seu pedido e retire no local sem demora! 🏪✨</p>
     <P>No Mercado C&C, você compra do seu jeito. Simples, rápido e prático! 🛒😊</p>
-    </center>
     </div>
 
-    <article class="servico-1">
+
+    <div class="servico-1">
         <p>Retirada no local:</p>
+        <label for="calendario">Selecione o Dia</label>
+        <input type="date">
+        
+        <label for="Horario">Melhor Horario:</label>
+        <input type="time" name="horario" id="hr">
+
+
         <button>selecione</button>
         <p>GRATUITA</p>
-    </article>
+    </div>
 
-    <article class="servico-2">
+    <div class="bairro-rua">
         <p>Tele-Entrega</p>
-        <button>selecione</button>
-    </article>
+        
+        <label for="bairro">Bairro</label>
+        <input type="text" name="bairro" id="bairro" required />
+
+        <label for="rua">Rua:</label>
+        <input type="text" name="rua" id="rua" required />
+
+
+    </div>
+
+    <div class="numero-cep">   
+
+        <label for="CEP">CEP:</label>
+        <input type="number" name="cep" id="cep" placeholder="00000-000" required>
+
+        <label for="numero">Número:</label>
+        <input type="number" name="N" id="numero" required>
+
+    </div>
+
+    <div class="referencia-confirmar">
+
+        <label for="ptoreferencia">Ponto de referencia:</label>
+        <input type="text" name="preferencia" id="ptoreferencia" placeholder="proximo a casa azul">
+
+        <button>confirmar</button>
+
+    </div>
+
+
+
 </body>
 
 <footer>
@@ -34,7 +70,7 @@
         <p><small>
             <a href="produtos.html">produtos</a>
             <a href="servicos.html">Servicos</a>
-            <a href="contato.html">Contatos</a>
+            <a href="forms.html">Conta</a>
             <a href="#">mercadocc@hmail.com</a> </a> 
         </small></p>
         </footer>

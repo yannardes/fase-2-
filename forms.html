@@ -3,63 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="pagina_cadastro.css">
+    <title>Cadastro</title>
 </head>
 <body>
-    <form action="./submit_page" method="get">
-        <h2>Crie sua conta</h2>
-        <div></div>
+    <div class="container">
+    <form action="#" method="get">
+        <h2 class="titulo-registro">Crie sua conta</h2>
+        <div class="nome-completo">
 
           <label for="name">Nome Completo:</label>
           <input type="text" name="nome" id="nome" required />
 
         </div>
 
-        <div>
+        <div class="CPF">
 
         <label for="CPF">CPF:</label>
         <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" required>
 
         </div>
 
-        <br>
 
-        <div>
 
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" required placeholder="exemplo@gmail.com" />
+        <div class="email">
 
-        </div>
-
-        <div>
-
-            <label for="email">Confirme seu Email:</label>
-            <input type="email" name="email" id="email" required placeholder="exemplo@gmail.com" />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="exemplo@gmail.com" />
+            <br>
+        <label for="email">Confirme seu Email:</label>
+        <input type="email" name="email" id="email" required placeholder="exemplo@gmail.com" />
 
         </div>
 
-        <br>
+   
 
-        <div>
+        <div class="senha">
             <label for="senha">Escolha uma senha:</label>
             <input type="password" name="senha" id="senha" required>
-
-        </div>
-
-        <div>
+            <br>
             <label for="senha">Confirme sua senha:</label>
             <input type="password" name="senha" id="senha" required>
 
         </div>
 
-        <br>
-    <div>
+        
+    <div class="dnascimento">
 
         <label for="dnacismento">Data de nascimento:</label>
         <input type="date" id="data" name="data" required>
 
     </div>
-<div>
+<div class="sexo">
     <label for="sexo">Sexo:</label>
 
     <label for="sexo">Masculino</label>
@@ -68,10 +63,8 @@
     <label for="sexo">Feminino</label>
     <input type="radio" name="title">
 </div>
-<br>
 
-<div>
-
+<div class="endereco">
 <label for="Estado">Escolha seu estado:</label>
 <select name="Estado" id="Estado" required>
 <option value="RS">RS</option>
@@ -85,7 +78,6 @@
 <label for="Bairro">Bairro:</label>
 <input type="text" id="bairro" name="bairro" required>
 
-<br>
 
 <label for="Rua">Rua:</label>
 <input type="text" name="rua" id="rua">
@@ -95,12 +87,25 @@
 
 <label for="complemento">Complemento:</label>
 <input type="number" id="complemento" name="complemento" required>
-
 </div>
 
-      </form>
-      
+<div class="botao">
+    <button>CONFIRMA</button>
 
+</div>
+</div>
 </form>
+
+<footer class="text-center mt-5">
+    <small>
+      Copyright © 2025 Mini Mercado C&C. Todos os direitos reservados.
+    </small>
+    <p>
+      <a href="produtos.html">Produtos</a> |
+      <a href="servicos.html">Serviços</a> |
+      <a href="forms.html">Conta</a></a> |
+      <a href="#">mercadocc@email.com</a>
+    </p>
+  </footer>
 </body>
 </html>
