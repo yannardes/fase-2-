@@ -11,10 +11,10 @@
     />
   </head>
   <body>
-    <!-- menu de navegação entre paginas e marca -->
+    <!-- Menu de navegação -->
     <header class="marca">
       <h1>Mini Mercado C & C</h1>
-      <nav>
+      <nav role="navigation" aria-label="Menu principal">
         <ul class="menu">
           <li><a href="produtos.html">Produtos</a></li>
           <li><a href="servicos.html">Serviços</a></li>
@@ -23,7 +23,7 @@
       </nav>
     </header>
 
-    <!-- apresentão do marca C&C -->
+    <!-- Apresentação -->
     <div class="container mt-4">
       <h1 class="intro text-center">Aqui nos preocupamos com você:</h1>
       <p class="apresentacao text-center">
@@ -36,26 +36,38 @@
       </p>
     </div>
 
-    <!-- Elemento Carrossel em Bootstrap -->
+    <!-- Carrossel de produtos -->
     <div
       id="carouselProdutos"
       class="carousel slide mt-5"
-      data-bs-ride="carousel">
-
-      <!-- Produtos apresentado no carrossel-->
+      data-bs-ride="carousel"
+      aria-label="Destaques de produtos"
+    >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="frutas/pessego.jpg" class="d-block w-100" alt="Pêssegos" />
+          <img
+            src="frutas/pessego.jpg"
+            class="d-block w-100"
+            alt="Pêssegos frescos, prontos para consumo"
+          />
         </div>
         <div class="carousel-item">
-          <img src="frutas/morango.jpg" class="d-block w-100" alt="Morangos" />
+          <img
+            src="frutas/morango.jpg"
+            class="d-block w-100"
+            alt="Morangos vermelhos e maduros em uma cesta"
+          />
         </div>
         <div class="carousel-item">
-          <img src="alimento/massa.jpg" class="d-block w-100" alt="Massa" />
+          <img
+            src="alimento/massa.jpg"
+            class="d-block w-100"
+            alt="Pacote de massa tipo farfalle"
+          />
         </div>
       </div>
 
-      <!-- botão esquerdo do carrossel -->
+      <!-- Botões de navegação no carrossel -->
       <button
         class="carousel-control-prev"
         type="button"
@@ -63,8 +75,6 @@
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-      <!-- botão direito do carrossel -->
       </button>
       <button
         class="carousel-control-next"
@@ -76,51 +86,88 @@
       </button>
     </div>
 
-    <!-- Itens  -->
+    <!-- Lista de produtos com redirecionamento -->
     <section class="itens">
-      <div>
+      <div
+        class="produto"
+        tabindex="0"
+        role="button"
+        aria-label="Pêssegos frescos, clique para ver mais produtos"
+      >
         <h2>Pêssegos🍑:</h2>
-        <img src="frutas/pessego.jpg" alt="pêssegos" />
+        <img
+          src="frutas/pessego.jpg"
+          alt="Pêssegos orgânicos fresquinhos em um cesto"
+        />
         <p>
-          Pêssegos orgânicos fresquinhos, da mais alta qualidade e confiança que
-          a marca C&C pode oferecer!
+          Pêssegos orgânicos da mais alta qualidade e confiança que a marca C&C
+          pode oferecer!
         </p>
         <p>KG: R$15,90</p>
       </div>
-      <div>
+      <div
+        class="produto"
+        tabindex="0"
+        role="button"
+        aria-label="Morangos vermelhos, clique para ver mais produtos"
+      >
         <h2>Morangos🍓:</h2>
-        <img src="frutas/morango.jpg" alt="morango" />
+        <img
+          src="frutas/morango.jpg"
+          alt="Morangos vermelhos brilhantes em uma bandeja"
+        />
         <p>
           Morangos orgânicos fresquinhos, da mais alta qualidade e confiança que
           a marca C&C pode oferecer!
         </p>
         <p>KG: R$28,00</p>
       </div>
-      <div>
+      <div
+        class="produto"
+        tabindex="0"
+        role="button"
+        aria-label="Pacote de massa farfalle, clique para ver mais produtos"
+      >
         <h2>Massa🍝:</h2>
-        <img src="alimento/massa.jpg" alt="massa" />
+        <img
+          src="alimento/massa.jpg"
+          alt="Pacote de massa tipo farfalle de 500g"
+        />
         <p>
           Massa 500g tipo farfalle orgânica, da mais alta qualidade e confiança
           que a marca C&C pode oferecer!
         </p>
         <p>UN: R$10,50</p>
       </div>
-    </section>  
-    
-    <!-- rodapé da pagina -->
+    </section>
 
+    <!-- Rodapé -->
     <footer class="text-center mt-5">
-      <small>
-        Copyright © 2025 Mini Mercado C&C. Todos os direitos reservados.
-      </small>
+      <small
+        >Copyright © 2025 Mini Mercado C&C. Todos os direitos reservados.</small
+      >
       <p>
         <a href="produtos.html">Produtos</a> |
-        <a href="servicos.html">Serviços</a> |
-        <a href="forms.html">Conta</a></a> |
+        <a href="servicos.html">Serviços</a> | <a href="forms.html">Conta</a> |
         <a href="#">mercadocc@email.com</a>
       </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Adiciona evento de clique para redirecionamento
+      document.querySelectorAll(".produto").forEach((item) => {
+        item.addEventListener("click", () => {
+          window.location.href = "produtos.html";
+        });
+
+        item.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            window.location.href = "produtos.html";
+          }
+        });
+      });
+    </script>
   </body>
 </html>

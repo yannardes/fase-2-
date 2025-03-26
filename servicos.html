@@ -1,77 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pagina_servicos.css"/>
-    <title>Servicos</title>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pagina_servicos.css" />
+    <title>Serviços</title>
+  </head>
+  <body>
     <h1>Escolha a forma de entrega</h1>
-</head>
-<body>
+
+    <!-- Apresentação dos serviços -->
     <div>
-    <p>Entrega ou Retirada? Você Escolhe! 🚀</p>
-    <p>Quer comodidade? Peça pelo aplicativo e receba tudo no conforto de casa! 🚚💨</p>
-    <p>Prefere passar aqui rapidinho? Faça seu pedido e retire no local sem demora! 🏪</p>
-    <P>No Mercado C&C, você compra do seu jeito. Simples, rápido e prático! 🛒😊</p>
+      <p>Entrega ou Retirada? Você Escolhe! 🚀</p>
+      <p>
+        Quer comodidade? Peça pelo aplicativo e receba tudo no conforto de casa!
+        🚚💨
+      </p>
+      <p>
+        Prefere passar aqui rapidinho? Faça seu pedido e retire no local sem
+        demora! 🏪
+      </p>
+      <p>
+        No Mercado C&C, você compra do seu jeito. Simples, rápido e prático!
+        🛒😊
+      </p>
     </div>
 
-
-    <div class="servico-1">
+    <!-- Formulário -->
+    <form id="deliveryForm">
+      <!-- Retirada no local -->
+      <div class="servico-1">
         <p>Retirada no local:</p>
         <label for="calendario">Selecione o Dia</label>
-        <input type="date">
-        
-        <label for="Horario">Melhor Horario:</label>
-        <input type="time" name="horario" id="hr">
+        <input type="date" id="calendario" required />
 
+        <label for="Horario">Melhor Horário:</label>
+        <input type="time" name="horario" id="hr" required />
 
-        <button>selecione</button>
+        <button type="button" id="pickup">Selecionar</button>
         <p>GRATUITA</p>
-    </div>
+      </div>
 
-    <div class="bairro-rua">
+      <!-- Tele-Entrega -->
+      <div class="bairro-rua">
         <p>Tele-Entrega</p>
-        
+
         <label for="bairro">Bairro</label>
         <input type="text" name="bairro" id="bairro" required />
 
         <label for="rua">Rua:</label>
         <input type="text" name="rua" id="rua" required />
+      </div>
 
-
-    </div>
-
-    <div class="numero-cep">   
-
+      <div class="numero-cep">
         <label for="CEP">CEP:</label>
-        <input type="number" name="cep" id="cep" placeholder="00000-000" required>
+        <input
+          type="text"
+          name="cep"
+          id="cep"
+          placeholder="00000-000"
+          required
+        />
 
         <label for="numero">Número:</label>
-        <input type="number" name="N" id="numero" required>
+        <input type="number" name="N" id="numero" required />
+      </div>
 
-    </div>
+      <div class="referencia-confirmar">
+        <label for="ptoreferencia">Ponto de referência:</label>
+        <input
+          type="text"
+          name="preferencia"
+          id="ptoreferencia"
+          placeholder="Próximo à casa azul"
+        />
+      </div>
 
-    <div class="referencia-confirmar">
+      <div class="botao">
+        <button type="submit">Confirmar</button>
+      </div>
 
-        <label for="ptoreferencia">Ponto de referencia:</label>
-        <input type="text" name="preferencia" id="ptoreferencia" placeholder="proximo a casa azul">
+      <p id="message"></p>
+      <!-- Mensagem de feedback -->
+    </form>
 
-        <button>confirmar</button>
+    <script src="script_servicos.js"></script>
+  </body>
 
-    </div>
-
-
-
-</body>
-
-<footer>
-    <footer>
-        <small> Copyright © 2025 Mini Mercado C&C. Todos direitos reservados.</small>
-        <p><small>
-            <a href="produtos.html">produtos</a>
-            <a href="servicos.html">Servicos</a>
-            <a href="forms.html">Conta</a>
-            <a href="#">mercadocc@hmail.com</a> </a> 
-        </small></p>
-        </footer>
+  <!-- Footer -->
+  <footer>
+    <small>Copyright © 2025 Mini Mercado C&C. Todos direitos reservados.</small>
+    <p>
+      <small>
+        <a href="produtos.html">Produtos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="forms.html">Conta</a>
+        <a href="#">mercadocc@hmail.com</a>
+      </small>
+    </p>
+  </footer>
 </html>
